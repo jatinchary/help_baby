@@ -1,0 +1,23 @@
+{
+  "name": "Help Hania Anam Fight Leukemia",
+  "short_name": "Help Hania",
+  "description": "Support Baby Hania Anam's B-ALL leukemia treatment at Rainbow Children's Hospital, Hyderabad. Verified report and direct UPI donations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF8F3",
+  "theme_color": "#0F766E",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
