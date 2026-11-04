@@ -22,7 +22,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 const description =
-  "3-year-old Hania has B-ALL leukemia. See her verified Rainbow Children's Hospital report and donate directly to her family via UPI.";
+  "3-year-old Hania has B-ALL leukemia, a type of blood cancer. See her verified Rainbow Children's Hospital reports and donate directly to her family via UPI.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     "Hania Anam",
     "Baby Hania",
     "B-ALL leukemia",
+    "blood cancer",
     "fundraising Hyderabad",
     "Rainbow Children's Hospital",
     "donate UPI",
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
         url: siteConfig.seo.ogImage,
         width: 1200,
         height: 630,
-        alt: "Help Hania Anam fight cancer — a three-year-old girl from Hyderabad with B-ALL leukemia",
+        alt: "Help Hania Anam fight blood cancer — a three-year-old girl from Hyderabad with B-ALL leukemia",
       },
     ],
   },
@@ -96,21 +97,21 @@ const jsonLd = {
       "@id": `${siteConfig.siteUrl}/#hania`,
       name: siteConfig.patient.name,
       gender: "Female",
-      description: `${siteConfig.patient.age} old girl from ${siteConfig.patient.city}, diagnosed with B-Cell Acute Lymphoblastic Leukemia.`,
+      description: `${siteConfig.patient.age} old girl from ${siteConfig.patient.city}, diagnosed with B-Cell Acute Lymphoblastic Leukemia, a type of blood cancer.`,
       image: `${siteConfig.siteUrl}${siteConfig.patient.photo}`,
     },
     {
       "@type": "MedicalCondition",
       "@id": `${siteConfig.siteUrl}/#condition`,
-      name: "B-Cell Acute Lymphoblastic Leukemia",
-      alternateName: ["B-ALL", "ALL"],
+      name: "B-Cell Acute Lymphoblastic Leukemia (blood cancer)",
+      alternateName: ["B-ALL", "ALL", "Blood cancer"],
       associatedAnatomy: {
         "@type": "AnatomicalStructure",
         name: "Bone marrow and blood",
       },
       signOrSymptom: {
         "@type": "MedicalSignOrSymptom",
-        name: "Leukemia affecting B-cell lymphocytes",
+        name: "Leukemia (blood cancer) affecting B-cell lymphocytes",
       },
     },
     {
@@ -145,7 +146,7 @@ const jsonLd = {
       about: { "@id": `${siteConfig.siteUrl}/#condition` },
       mainEntity: { "@id": `${siteConfig.siteUrl}/#hania` },
       significantLink: `${siteConfig.siteUrl}#donate`,
-      lastReviewed: "2026-11-01",
+      lastReviewed: "2026-11-04",
     },
   ],
 };
@@ -172,12 +173,19 @@ export default function RootLayout({
               JavaScript is needed for the UPI QR code, countdown and contact
               details. You can still read the{" "}
               <a
-                href={siteConfig.report.pdfPath}
+                href={siteConfig.report.documents[0].pdfPath}
                 className="font-semibold text-hope underline"
               >
-                original hospital report (PDF)
+                latest hospital report
               </a>{" "}
-              and donate using the UPI ID shown in the site source.
+              and the{" "}
+              <a
+                href={siteConfig.report.documents[1].pdfPath}
+                className="font-semibold text-hope underline"
+              >
+                initial hospital report
+              </a>{" "}
+              (PDF), and donate using the UPI ID shown in the site source.
             </p>
           </div>
         </noscript>

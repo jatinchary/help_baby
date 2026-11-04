@@ -93,9 +93,10 @@ export function Hero() {
             <p className="mt-5 max-w-xl text-base leading-relaxed text-gray-600 sm:text-lg">
               Hania is {siteConfig.patient.age} old. She has been diagnosed with{" "}
               <strong className="font-semibold text-ink">
-                B-Cell Acute Lymphoblastic Leukemia (B-ALL)
-              </strong>{" "}
-              and is in the middle of chemotherapy at Rainbow Children&apos;s
+                B-Cell Acute Lymphoblastic Leukemia (B-ALL), a type of blood
+                cancer
+              </strong>
+              , and is in the middle of chemotherapy at Rainbow Children&apos;s
               Hospital, Hyderabad.
             </p>
             <p className="mt-3 max-w-xl text-base leading-relaxed text-gray-600 sm:text-lg">

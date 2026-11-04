@@ -13,7 +13,7 @@ primitives, lucide-react, framer-motion and qrcode.react.
 - Her story and an honest treatment timeline
 - Diagnosis and treatment cards sourced from the discharge summary
 - Hospital/doctor verification section with masked UHID and IP number
-- Full 5-page medical report gallery with zoom + PDF download
+- Both medical report galleries (9 pages total) with zoom + PDF download
 - Photo gallery (currently one consented photo)
 - Donate section: client-rendered UPI QR code, preset/custom amounts, UPI ID
   copy button, copy-safe bank-transfer guidance, and an "I've donated" form that
@@ -96,14 +96,16 @@ public/photos/hania.webp        # hero + gallery (900px wide, WebP)
 public/photos/hania.jpg         # original JPG master (not loaded by the site)
 public/photos/hania-avatar.jpg  # 96px header avatar
 public/photos/hania-og.jpg      # 1200×630 social preview
-public/docs/discharge-summary.pdf
+public/docs/discharge-summary.pdf        # initial report, 31 Aug 2026
 public/docs/page-1.webp … page-5.webp
+public/docs/latest-discharge-summary.pdf # latest report, 26 Oct 2026
+public/docs/latest-page-1.webp … latest-page-4.webp
 ```
 
 To swap the photo, replace `hania.webp` and `hania-avatar.jpg` with the same
-file names. To swap the report, replace the PDF and the five page images. If
-you only have JPG pages, keep the file names in `siteConfig.report.pageImages`
-in sync. The PDF is linked directly and is not converted at build time.
+file names. To swap a report, replace its PDF and page images. If you only have
+JPG pages, keep the file names in `siteConfig.report.documents[].pageImages` in
+sync. The PDFs are linked directly and are not converted at build time.
 
 ## Placeholder safety check
 

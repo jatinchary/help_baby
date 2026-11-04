@@ -15,7 +15,7 @@ const cards = [
     icon: Stethoscope,
     eyebrow: "Diagnosis",
     title: "B-Cell Acute Lymphoblastic Leukemia",
-    body: "B-ALL, CALLA-positive and CNS-negative. FISH negative / standard cytogenetics.",
+    body: "A type of blood cancer. B-ALL is CALLA-positive and CNS-negative, with FISH negative / standard cytogenetics.",
     points: [
       "CALLA-positive",
       "CNS-negative",
@@ -60,8 +60,9 @@ export function Diagnosis() {
           </p>
           <h2 className="section-title">What Hania is facing</h2>
           <p className="section-lede">
-            Everything below is taken directly from her discharge summary. The
-            full report is available for you to read further down the page.
+            Everything below is taken directly from her initial discharge
+            summary. Both hospital reports are available to read further down
+            the page.
           </p>
         </Reveal>
 
@@ -139,8 +140,8 @@ export function Diagnosis() {
               The road ahead
             </h3>
             <p className="mt-2 max-w-2xl text-sm text-gray-500 sm:text-base">
-              Leukemia treatment is a marathon, not a sprint. Hania is at the
-              beginning of a journey that will take many months.
+              Blood cancer treatment is a marathon, not a sprint. Hania is at
+              the beginning of a journey that will take many months.
             </p>
           </Reveal>
           <TreatmentTimeline />

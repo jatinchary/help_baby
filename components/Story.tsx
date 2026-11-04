@@ -39,7 +39,7 @@ export function Story() {
                   Diagnosis
                 </p>
                 <p className="mt-1 font-heading text-sm font-bold text-ink">
-                  B-ALL leukemia
+                  B-ALL leukemia (blood cancer)
                 </p>
               </div>
               <div className="rounded-2xl border border-rose-100 bg-white p-4">

@@ -34,7 +34,7 @@ export function Footer() {
   async function share() {
     const shareData = {
       title: siteConfig.seo.title,
-      text: "Help 3-year-old Hania fight B-ALL leukemia. Her verified hospital report and family donation details are here.",
+      text: "Help 3-year-old Hania fight B-ALL leukemia (blood cancer). Her verified hospital reports and family donation details are here.",
       url: typeof window !== "undefined" ? window.location.href : siteConfig.siteUrl,
     };
 

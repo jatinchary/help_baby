@@ -2,9 +2,9 @@ export const siteConfig = {
   siteUrl: "https://help-hania-anam.vercel.app",
   analyticsEndpoint: "",
   seo: {
-    title: "Help Hania Anam Fight Leukemia | Support Her Treatment",
+    title: "Help Hania Anam Fight Leukemia (Blood Cancer)",
     description:
-      "Three-year-old Hania has B-Cell Acute Lymphoblastic Leukemia. Her verified Rainbow Children's Hospital report is here. Donate directly to her family via UPI.",
+      "Three-year-old Hania has B-Cell Acute Lymphoblastic Leukemia (B-ALL), a blood cancer. See her verified hospital reports and donate directly via UPI.",
     ogImage: "/photos/hania-og.jpg",
   },
   patient: {
@@ -20,14 +20,14 @@ export const siteConfig = {
       "Baby Hania Anam, a three-year-old girl in a pink striped dress, resting on a hospital bed",
   },
   diagnosis: {
-    primary: "B-Cell Acute Lymphoblastic Leukemia (B-ALL)",
-    short: "B-ALL leukemia",
+    primary: "B-Cell Acute Lymphoblastic Leukemia (B-ALL) — a blood cancer",
+    short: "B-ALL leukemia (blood cancer)",
     details:
       "CALLA-positive, CNS-negative, FISH negative / standard cytogenetics, good prednisolone response",
     stage: "Induction Week 4",
     admissionDate: "30 August 2026",
     dischargeDate: "31 August 2026",
-    nextReview: "05 September 2026",
+    nextReview: "06 November 2026",
     conditionAtDischarge: "Active, afebrile and hemodynamically stable",
     weightOnAdmission: "14.5 kg",
     procedures: [
@@ -94,18 +94,47 @@ export const siteConfig = {
     },
   ],
   report: {
-    pdfPath: "/docs/discharge-summary.pdf",
-    pageImages: [
-      "/docs/page-1.webp",
-      "/docs/page-2.webp",
-      "/docs/page-3.webp",
-      "/docs/page-4.webp",
-      "/docs/page-5.webp",
-    ],
-    pageCount: 5,
-    title: "Discharge Summary — Rainbow Children's Hospital",
     disclaimer:
-      "This is the authentic, unedited discharge summary from Rainbow Children's Hospital. Shared with the family's consent.",
+      "These are the authentic, unedited discharge summaries from Rainbow Children's Hospital. Both documents are shared with the family's consent.",
+    documents: [
+      {
+        id: "latest",
+        label: "Latest · Oct",
+        date: "26 October 2026",
+        dateShort: "26 Oct 2026",
+        pdfPath: "/docs/latest-discharge-summary.pdf",
+        pageImages: [
+          "/docs/latest-page-1.webp",
+          "/docs/latest-page-2.webp",
+          "/docs/latest-page-3.webp",
+          "/docs/latest-page-4.webp",
+        ],
+        pageCount: 4,
+        pdfSize: "3.4 MB",
+        title: "Latest Discharge Summary — Rainbow Children's Hospital",
+        description:
+          "Protocol M chemotherapy, admitted 22–26 October 2026. Includes recent blood counts, chemotherapy doses and discharge medicines.",
+      },
+      {
+        id: "initial",
+        label: "Initial · Aug",
+        date: "31 August 2026",
+        dateShort: "31 Aug 2026",
+        pdfPath: "/docs/discharge-summary.pdf",
+        pageImages: [
+          "/docs/page-1.webp",
+          "/docs/page-2.webp",
+          "/docs/page-3.webp",
+          "/docs/page-4.webp",
+          "/docs/page-5.webp",
+        ],
+        pageCount: 5,
+        pdfSize: "3.8 MB",
+        title: "Initial Discharge Summary — Rainbow Children's Hospital",
+        description:
+          "Diagnosis and first induction chemotherapy, admitted 30–31 August 2026.",
+      },
+    ],
   },
   donation: {
     upiId: "8142099682@axl",
@@ -135,7 +164,7 @@ export const siteConfig = {
     quote:
       "Hania is a fighter. With the right treatment and a little help from people like you, she can get back to being a happy little girl.",
     paragraphs: [
-      "Hania is three years old. In August 2026, after a series of tests at Rainbow Children's Hospital in Hyderabad, her parents were given the news no family is ever prepared for: Hania has B-Cell Acute Lymphoblastic Leukemia (B-ALL). She was admitted on 30 August 2026 to begin chemotherapy.",
+      "Hania is three years old. In August 2026, after a series of tests at Rainbow Children's Hospital in Hyderabad, her parents were given the news no family is ever prepared for: Hania has B-Cell Acute Lymphoblastic Leukemia (B-ALL), a type of blood cancer. She was admitted on 30 August 2026 to begin chemotherapy.",
       "Hania is currently in Induction Week 4 of her treatment. She has received Daunorubicin and Vincristine, along with triple intrathecal chemotherapy, and her doctors have noted a good response to prednisolone. Her treatment will continue for many months through consolidation and maintenance phases, with regular blood tests, hospital stays and reviews. Every contribution helps cover chemotherapy, hospitalisation, medicines and the family's travel to the hospital.",
       "Hania's parents, Mr. and Mrs. Shareef, are doing everything they can to give her the best possible chance. Your donation — and every share — means they do not have to face this alone. Thank you for helping Hania get back to being a happy, healthy little girl.",
     ],
@@ -145,7 +174,7 @@ export const siteConfig = {
       title: "Diagnosis",
       date: "August 2026",
       description:
-        "B-Cell Acute Lymphoblastic Leukemia (B-ALL) confirmed at Rainbow Children's Hospital, Hyderabad.",
+        "B-Cell Acute Lymphoblastic Leukemia (B-ALL), a type of blood cancer, confirmed at Rainbow Children's Hospital, Hyderabad.",
       status: "complete",
     },
     {
@@ -181,7 +210,7 @@ export const siteConfig = {
     {
       question: "Is this real? How can I verify Hania's diagnosis?",
       answer:
-        "Yes. Hania is a real three-year-old patient at Rainbow Children's Hospital, Banjara Hills, Hyderabad. Her original discharge summary is published on this site in full — all five pages — along with the treating doctor's name, qualifications and license number. You can also call the hospital on 040-44665555 or 1800 2122 to verify the UHID and IP number shown on the report.",
+        "Yes. Hania is a real three-year-old patient at Rainbow Children's Hospital, Banjara Hills, Hyderabad. Her original discharge summaries are published on this site in full — all nine pages — along with the treating doctor's name, qualifications and license number. You can also call the hospital on 040-44665555 or 1800 2122 to verify the UHID and IP numbers shown on the reports.",
     },
     {
       question: "Where does my money go?",
@@ -204,9 +233,9 @@ export const siteConfig = {
         "Hania's immune system is very weak during chemotherapy, so visitors are limited for her safety. Please message the family on WhatsApp first — they will let you know if a visit is possible. Calls and messages of support are always welcome.",
     },
     {
-      question: "How is the medical report verified?",
+      question: "How are the medical reports verified?",
       answer:
-        "The discharge summary is the original scanned document issued by Rainbow Children's Hospital on 31 August 2026. It carries the hospital's UHID (BAH-00662657), IP number, treating consultant details and the signature of the hospital's registrar. The version on this site is unedited; only the family's home address has been withheld for privacy.",
+        "Both discharge summaries are original scanned documents issued by Rainbow Children's Hospital — the first on 31 August 2026 and the latest on 26 October 2026. Together they run to nine pages and carry the hospital's UHID (BAH-00662657), IP numbers, treating consultant details and the signature of the hospital's registrar. The versions on this site are unedited; only the family's home address has been withheld from the text.",
     },
   ],
   consent:
