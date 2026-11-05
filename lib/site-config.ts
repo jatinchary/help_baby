@@ -137,9 +137,9 @@ export const siteConfig = {
     ],
   },
   donation: {
-    upiId: "8142099682@axl",
+    upiId: "8142099682@ybl",
     upiIdNote:
-      "UPI ID decoded directly from the family's official QR code. If your bank app does not recognise it, please call the family before donating.",
+      "UPI ID from the family's official PhonePe QR (ICICI Bank). If your bank app does not recognise it, please call the family before donating.",
     payeeName: "SHAREEF MOHD",
     presets: [500, 1000, 2000, 5000],
     bank: null as

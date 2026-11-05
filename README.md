@@ -63,17 +63,14 @@ The site URL used for canonical links, Open Graph and JSON-LD is
 
 ### Values currently configured
 
-- **UPI ID:** `8142099682@axl`
+- **UPI ID:** `8142099682@ybl`
 - **Payee name:** `SHAREEF MOHD`
 - **Family contact / WhatsApp:** `+91 81420 99682`
   (this is the number linked to the supplied UPI QR; confirm it with the family)
 - **Site URL:** `https://help-hania-anam.vercel.app` (update before launch)
 
-> **Important — check the UPI handle before sharing the site.** The official QR
-> image supplied by the family decodes to `8142099682@axl` (confirmed with
-> three independent QR decoders), while the text printed under the screenshot
-> reads `8142099682@ybl`. The site uses the value encoded in the QR itself. Have
-> the family scan a test payment of ₹1 from another phone before publishing.
+> **Important — verify before sharing.** Have the family scan a test payment of
+> ₹1 from another phone before publishing.
 
 Bank transfer details are intentionally **not published** (`donation.bank` is
 `null`). To show them, fill in the object:
